@@ -1,14 +1,13 @@
-// AdsCard.js
 import React from 'react';
 
 const AdsCard = ({ layout }) => {
   const cardClass = layout === 'grid'
-    ? 'flex flex-col bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
-    : 'flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700';
+    ? 'flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-col bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
+    : 'flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700';
 
   const imgClass = layout === 'grid'
-    ? 'object-cover w-full h-48 rounded-t-lg'
-    : 'object-cover w-full h-48 md:h-full md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg';
+    ? 'object-cover w-full h-48 sm:h-48 md:h-48 lg:h-48 xl:h-48 rounded-t-lg sm:rounded-t-lg md:rounded-t-lg lg:rounded-t-lg xl:rounded-t-lg'
+    : 'object-cover w-full h-48 sm:w-48 sm:h-full md:h-full md:w-48 lg:h-full lg:w-48 xl:h-full xl:w-48 rounded-t-lg sm:rounded-none sm:rounded-l-lg md:rounded-none md:rounded-l-lg lg:rounded-none lg:rounded-l-lg xl:rounded-none xl:rounded-l-lg';
 
   return (
     <div className={cardClass}>
