@@ -1,7 +1,8 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { FaSearch } from 'react-icons/fa';
-import { FiLogOut } from 'react-icons/fi'; // Import the leave icon
+import { FiLogOut } from 'react-icons/fi'; 
+import { HiPlus } from "react-icons/hi";
 
 const Groups = () => {
   return (
@@ -10,14 +11,12 @@ const Groups = () => {
       <div className="w-full md:w-1/3 bg-white border-r border-gray-300">
         {/* Sidebar Header with Search */}
         <div className="flex flex-col p-4 bg-green-500 text-white">
-          <div className="flex items-center mb-4">
-            <img
-              src="https://picsum.photos/600/400"
-              alt="Profile"
-              className="w-10 h-10 rounded-full"
-            />
-            <h1 className="text-xl font-bold ml-4">Groups</h1>
-          </div>
+        <div className="flex items-center mb-4 p-1 bg-green-100 w-32 rounded-full hover:bg-green-300">
+  <HiPlus className="w-8 h-8 rounded-full text-green-500" />
+  <h1 className="text-lg font-bold ml-2 text-green-500">Groups</h1>
+</div>
+
+
           <div className="relative w-full">
             <input
               type="text"
@@ -135,7 +134,7 @@ const Groups = () => {
         </div>
 
         {/* Input Field */}
-        <div className="absolute bottom-0 left-0 w-full bg-white p-4 border-t border-gray-300">
+        <div className="absolute bottom-16 left-0 w-full bg-white p-4 border-t border-gray-300">
           <div className="flex items-center">
             <input
               type="text"

@@ -1,5 +1,5 @@
 // src/lib/consts/navigation.js
-import { HiOutlineViewGrid, HiOutlineCube, HiOutlineShoppingCart, HiOutlineUsers, HiOutlineDocumentText, HiOutlineAnnotation, HiOutlineCog, HiOutlineQuestionMarkCircle } from "react-icons/hi";
+import { HiOutlineViewGrid, HiOutlineCube,HiOutlineSpeakerphone, HiOutlineShoppingCart, HiOutlineUsers, HiOutlineDocumentText, HiOutlineAnnotation, HiOutlineCog, HiOutlineQuestionMarkCircle } from "react-icons/hi";
 
 export const DASHBOARD_SIDEBAR_LINKS = [
     {
@@ -24,7 +24,7 @@ export const DASHBOARD_SIDEBAR_LINKS = [
         key: 'offers',
         label: 'Offers',
         path: '/offers',
-        icon: <HiOutlineAnnotation />
+        icon: <HiOutlineSpeakerphone />
     },
     {
         key: 'groups',
