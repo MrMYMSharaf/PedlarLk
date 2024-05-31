@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AdsCard from '../shared/AdsCard';
+import AdsCard from '../shared/card/AdsCard';
 import { FaTh, FaBars } from 'react-icons/fa';
 
 const ViewAllAds = () => {

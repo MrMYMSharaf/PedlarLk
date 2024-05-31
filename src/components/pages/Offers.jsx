@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import OfferSlider from '../shared/card/OfferSlider';
 
 const Offers = () => {
   return (
-    <div>Offers</div>
-  )
-}
+    <div>
+      <OfferSlider />
+    </div>
+  );
+};
 
-export default Offers
+export default Offers;
