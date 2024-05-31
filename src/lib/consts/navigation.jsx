@@ -15,10 +15,10 @@ export const DASHBOARD_SIDEBAR_LINKS = [
         icon: <HiOutlineCube />
     },
     {
-        key: 'myAds',
-        label: 'My Ads',
-        path: '/myAds',
-        icon: <HiOutlineShoppingCart />
+        key: 'myneeds',
+        label: 'My Needs',
+        path: '/myneeds',
+        icon: <HiOutlineSpeakerphone />
     },
     {
         key: 'offers',
@@ -26,6 +26,14 @@ export const DASHBOARD_SIDEBAR_LINKS = [
         path: '/offers',
         icon: <HiOutlineSpeakerphone />
     },
+    
+    {
+        key: 'myAds',
+        label: 'My Ads',
+        path: '/myAds',
+        icon: <HiOutlineShoppingCart />
+    },
+    
     {
         key: 'groups',
         label: 'Groups',

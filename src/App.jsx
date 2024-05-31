@@ -8,6 +8,7 @@ import  Myads from './components/pages/Myads';
 import  Groups from './components/pages/Groups';
 import  ViewAllAds from './components/pages/ViewAllAds';
 import NoPage from './components/pages/Error/NoPage';
+import MyNeeds from './components/pages/MyNeeds';
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
           <Route path="myads" element={<Myads />} />
           <Route path="viewallads" element={<ViewAllAds />} />
           <Route path="categories" element={<Categories />} />
+          <Route path="myneeds" element={<MyNeeds />} />
           
           
           <Route path="*" element={<NoPage />} />
