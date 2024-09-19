@@ -9,6 +9,7 @@ import  Groups from './components/pages/Groups';
 import  ViewAllAds from './components/pages/ViewAllAds';
 import NoPage from './components/pages/Error/NoPage';
 import MyNeeds from './components/pages/MyNeeds';
+import Login from './components/Auth/Login';
 
 function App() {
   
@@ -26,10 +27,9 @@ function App() {
           <Route path="viewallads" element={<ViewAllAds />} />
           <Route path="categories" element={<Categories />} />
           <Route path="myneeds" element={<MyNeeds />} />
-          
-          
           <Route path="*" element={<NoPage />} />
         </Route>
+        <Route path="/auth" element={<Login />} />
       </Routes>
     </Router>
     </>
