@@ -30,10 +30,10 @@ const Groups = () => {
         {/* Centered Buttons */}
         <div className="flex justify-center space-x-4 p-4 bg-white">
           <button className="bg-transparent hover:bg-gray-300 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-gray-500 hover:border-transparent rounded">
-            All
+          Unread
           </button>
           <button className="bg-transparent hover:bg-gray-300 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-gray-500 hover:border-transparent rounded">
-            Unread
+            User
           </button>
           <button className="bg-transparent hover:bg-gray-300 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-gray-500 hover:border-transparent rounded">
             Groups
