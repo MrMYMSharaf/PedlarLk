@@ -2,8 +2,8 @@ import React from 'react';
 
 const AdsCard = ({ layout }) => {
   const cardClass = layout === 'grid'
-    ? 'flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-col bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
-    : 'flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700';
+    ? 'relative flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-col bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'
+    : 'relative flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700';
 
   const imgClass = layout === 'grid'
     ? 'object-cover w-full h-48 sm:h-48 md:h-48 lg:h-48 xl:h-48 rounded-t-lg sm:rounded-t-lg md:rounded-t-lg lg:rounded-t-lg xl:rounded-t-lg'
@@ -11,9 +11,15 @@ const AdsCard = ({ layout }) => {
 
   return (
     <div className={cardClass}>
-      <a href="#" className="flex-shrink-0">
-        <img className={imgClass} src="https://picsum.photos/600/400" alt="Ad" />
-      </a>
+      <div className="relative">
+        <a href="#" className="flex-shrink-0">
+          <img className={imgClass} src="https://picsum.photos/600/400" alt="Ad" />
+        </a>
+        {/* Heart icon button */}
+        <button className="absolute top-2 right-2 bg-white bg-opacity-50 text-gray-700 rounded-full p-1 hover:text-red-500 hover:bg-gray-100 transition-all">
+          <i className="fa-regular fa-heart"></i>
+        </button>
+      </div>
       <div className="p-5 flex flex-col justify-between leading-normal">
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>

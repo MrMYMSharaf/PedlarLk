@@ -1,23 +1,23 @@
-import { useState } from 'react'
-import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from './components/shared/Layout';
 import Categories from './components/pages/Categories';
 import Offers from './components/pages/Offers';
 import Page from './components/pages/Page';
-import  Myads from './components/pages/Myads';
-import  Groups from './components/pages/Groups';
-import  ViewAllAds from './components/pages/ViewAllAds';
+import Myads from './components/pages/Myads';
+import Groups from './components/pages/Groups';
+import ViewAllAds from './components/pages/ViewAllAds';
 import NoPage from './components/pages/Error/NoPage';
 import MyNeeds from './components/pages/MyNeeds';
 import Login from './components/Auth/Login';
+import Register from './components/Auth/Register';
+import ForgotPasswort from './components/Auth/ForgotPasswort';
 
 function App() {
-  
-
   return (
-    <>
-      <Router>
+    <Router>
       <Routes>
+        {/* Main layout routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Categories />} />
           <Route path="offers" element={<Offers />} />
@@ -29,11 +29,16 @@ function App() {
           <Route path="myneeds" element={<MyNeeds />} />
           <Route path="*" element={<NoPage />} />
         </Route>
-        <Route path="/auth" element={<Login />} />
+
+        {/* Authentication routes */}
+        <Route path="auth">
+          <Route index element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="forgotPasswort" element={<ForgotPasswort />} />
+        </Route>
       </Routes>
     </Router>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
